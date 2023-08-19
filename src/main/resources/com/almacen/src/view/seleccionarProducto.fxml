@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="396.0" prefWidth="455.0" type="AnchorPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.agregueProductos">
+<AnchorPane prefHeight="396.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.agregueProductos">
    <children>
       <SplitPane fx:id="ContenedroInterfaz" dividerPositions="0.505859375, 0.6640625, 0.791015625, 0.90234375" layoutX="-2.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="417.0" prefWidth="457.0" style="-fx-background-color: EF763D;">
         <items>
@@ -19,7 +19,7 @@
                         <Image url="@../../public/images/products.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="tituloInterfaz" alignment="TOP_CENTER" layoutX="172.0" layoutY="81.0" prefHeight="58.0" prefWidth="269.0" style="-fx-background-color: EF763D;" text="Que vas a comprar?" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
+                  <Label fx:id="tituloInterfaz" alignment="TOP_CENTER" layoutX="172.0" layoutY="81.0" prefHeight="58.0" prefWidth="269.0" style="-fx-background-color: EF763D;" text="Escoja el tipo de producto" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
                      <font>
                         <Font name="Cambria Bold" size="24.0" />
                      </font>
@@ -49,4 +49,4 @@
         </items>
       </SplitPane>
    </children>
-</fx:root>
+</AnchorPane>

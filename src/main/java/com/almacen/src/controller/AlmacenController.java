@@ -1,27 +1,58 @@
 package com.almacen.src.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Separator;
-import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class AlmacenController {
+    private Stage stage;
+    private Scene scene;
+    @FXML
+    private Separator Separador;
 
     @FXML
-    private Separator Seprador;
-
+    private void eventoAgregarCliente(ActionEvent event) throws IOException {
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/agregarCliente.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
     @FXML
-    private Button agregarCliente;
-
+    private void eventoAgregarProducto(ActionEvent event) throws IOException {
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProducto.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
     @FXML
-    private Button agregarProducto;
-
-    @FXML
-    private Button comprarProductos;
-
-    @FXML
-    void eventoAgregarCliente(MouseEvent event) {
-
+    private void eventoRegistrarVenta(ActionEvent event) throws IOException {
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/agregarProductoRefrigerados.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }
