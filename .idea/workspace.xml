@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c318fd5-1cd6-445a-91a9-b1e0fd0701a9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/AgregarProductoEnvasado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/AgregarProductoRefrigerados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/AlmacenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/FacturaVenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/ProductosNaturalJ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/agregueProductos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/almacen/src/controller/agregueProductosPerecederos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/public/images/products.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/public/images/shoppingCart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/public/images/users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/Almacen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/FacturaVenta.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/ProductosNaturalJ.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/agregarProductoEnvasado.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/agregarProductoRefrigerados.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/agregraProductos.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/agregraProductosPerecederos.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/agregueProductos.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/almacen/src/view/hello-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2UAyVZw8jiXoT6efWGs0axqMU8j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/eddyo/Documents/codes/UQ/PROGRAMACION_3/Almacen/src/main/resources/com/almacen/src/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eddyo\Documents\codes\UQ\PROGRAMACION_3\Almacen\src\main\resources\com\almacen\src\view" />
+      <recent name="C:\Users\eddyo\Documents\codes\UQ\PROGRAMACION_3\Almacen\src\main\java\com\almacen\src\controller" />
+      <recent name="C:\Users\eddyo\Documents\codes\UQ\PROGRAMACION_3\Almacen\src\main\resources\com\almacen\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eddyo\Documents\codes\UQ\PROGRAMACION_3\Almacen\src\main\resources\com\almacen\src\view" />
+      <recent name="C:\Users\eddyo\Documents\codes\UQ\PROGRAMACION_3\Almacen\src\main\resources\com\almacen" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.almacen.src.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.almacen.src.Main" />
+      <module name="Almacen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.almacen.src.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c318fd5-1cd6-445a-91a9-b1e0fd0701a9" name="Changes" comment="" />
+      <created>1692396703794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692396703794</updated>
+      <workItem from="1692396704807" duration="649000" />
+      <workItem from="1692471860822" duration="1327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
