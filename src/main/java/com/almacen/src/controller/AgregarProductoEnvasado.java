@@ -1,21 +1,29 @@
 package com.almacen.src.controller;
 
 import com.almacen.src.model.Pais;
+import com.almacen.src.model.Producto;
 import com.almacen.src.model.ProductoEnvasado;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import java.math.BigInteger;
 import java.time.LocalDate;
 
-import static com.almacen.src.controller.AlmacenInstance.
+import static com.almacen.src.controller.AlmacenInstance.INSTANCE;
 public class AgregarProductoEnvasado {
 
+    private Stage stage;
+    private Scene scene;
     @FXML
     private MenuButton MenuButtonPaisOrigen;
 
@@ -65,15 +73,15 @@ public class AgregarProductoEnvasado {
     private TextField txtValorUnitario;
 
     @FXML
-    private TableView<ProductoEnvasado>tablaEnvasados;
+    private TableView<Producto>tablaEnvasados;
 
-    private final ObservableList<ProductoEnvasado>envasadoObservableList= FXCollections.observableArrayList();
+    private final ObservableList<Producto>envasadoObservableList= FXCollections.observableArrayList();
 
 
     @FXML
     public void initialize(){
 
-        envasadoObservableList.addAll((ProductoEnvasado) INSTANCE.getAlmacen().obtenerListaEnvasados());
+        envasadoObservableList.addAll(INSTANCE.getAlmacen().obtenerListaEnvasados());
         tablaEnvasados.setItems(envasadoObservableList);
         colCodigo.setCellValueFactory(new PropertyValueFactory<ProductoEnvasado, Integer>("codigo"));
         colNombre.setCellValueFactory(new PropertyValueFactory<ProductoEnvasado,String>("nombre"));
@@ -131,7 +139,15 @@ public class AgregarProductoEnvasado {
 
     @FXML
     void regresarMenuProductos(ActionEvent event) {
-
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProducto.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

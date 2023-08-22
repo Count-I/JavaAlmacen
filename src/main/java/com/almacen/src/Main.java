@@ -7,12 +7,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            Parent root = FXMLLoader.load(Main.class.getResource("/com/almacen/src/view/.fxml"));
+            Parent root = FXMLLoader.load(Main.class.getResource("view/Almacen.fxml"));
             Scene scene = new Scene(root, 713, 568);
             stage.setTitle("Almacen");
             stage.setResizable(false);

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="396.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.agregueProductos">
+<AnchorPane prefHeight="396.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.seleccionarProducto">
    <children>
       <SplitPane fx:id="ContenedroInterfaz" dividerPositions="0.505859375, 0.6640625, 0.791015625, 0.90234375" layoutX="-2.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="417.0" prefWidth="457.0" style="-fx-background-color: EF763D;">
         <items>
@@ -26,12 +26,12 @@
                   </Label>
                </children>
             </AnchorPane>
-            <Button fx:id="productosPerecederos" mnemonicParsing="false" onAction="#EventoProductosPerecederos" onMouseClicked="#EventoProductosPerecederos" prefHeight="75.0" prefWidth="236.0" style="-fx-background-color: EF763D;" text="Producto Perecederos" textFill="WHITE">
+            <Button fx:id="productosPerecederos" mnemonicParsing="false" onAction="#EventoProductosPerecederos" prefHeight="75.0" prefWidth="236.0" style="-fx-background-color: EF763D;" text="Producto Perecederos" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="productosRefrigerados" mnemonicParsing="false" onAction="#EventoProductosRefigerados" onMouseClicked="#EventoProductosRefigerados" prefHeight="75.0" prefWidth="236.0" style="-fx-background-color: EF763D;" text="Productos Refrigerados" textFill="WHITE">
+            <Button fx:id="productosRefrigerados" mnemonicParsing="false" onAction="#EventoProductosRefigerados" prefHeight="75.0" prefWidth="236.0" style="-fx-background-color: EF763D;" text="Productos Refrigerados" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="18.0" />
                </font>
@@ -41,7 +41,7 @@
                   <Font name="Cambria Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="menuPrincipal" mnemonicParsing="false" onAction="#EventoRegresarMenuPrincipal" onMouseClicked="#EventoRegresarMenuPrincipal" prefHeight="47.0" prefWidth="388.0" style="-fx-background-color: EF763D;" text="Regresar al Menu Principal" textFill="WHITE">
+            <Button fx:id="menuPrincipal" mnemonicParsing="false" onAction="#EventoRegresarMenuPrincipal" prefHeight="47.0" prefWidth="388.0" style="-fx-background-color: EF763D;" text="Regresar al Menu Principal" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="20.0" />
                </font>

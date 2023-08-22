@@ -1,19 +1,28 @@
 package com.almacen.src.controller;
 
+import com.almacen.src.model.Persona;
 import com.almacen.src.model.PersonaJuridica;
 import com.almacen.src.model.ProductoEnvasado;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import static com.almacen.src.controller.AlmacenInstance.INSTANCE;
 
 public class AgregarCliente {
+    private Stage stage;
+    private Scene scene;
 
     @FXML
     private Button EliminarCliente;
@@ -45,20 +54,20 @@ public class AgregarCliente {
     private Button regresarPrincipal;
 
     @FXML
-    private TableView<PersonaJuridica> tabla1;
+    private TableView<Persona> tabla1;
 
-    private final ObservableList<PersonaJuridica>personas= FXCollections.observableArrayList();
+    private final ObservableList<Persona>personas= FXCollections.observableArrayList();
 
     @FXML
     public void initialize(){
-        personas.addAll((PersonaJuridica) INSTANCE.getAlmacen().obtenerJuridica());
+        personas.addAll(INSTANCE.getAlmacen().obtenerJuridica());
         tabla1.setItems(personas);
         colNobre.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("nombre"));
         colApellido.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("apellido"));
         colTelefono.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("telefono"));
         colNit.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("nit"));
         colDirecion.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("direccion"));
-        colIdentificacion.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("identificacion"));
+        colIdentificacion.setCellValueFactory(new PropertyValueFactory<PersonaJuridica,String>("documento"));
 
 
     }
@@ -67,11 +76,11 @@ public class AgregarCliente {
     @FXML
     void EventoAgregarCliente(MouseEvent event) {
 
-        int codigo = txt
+        //int codigo = txt
 
-        ProductoEnvasado productoEnvasado= new ProductoEnvasado()
+        //ProductoEnvasado productoEnvasado= new ProductoEnvasado()
 
-        INSTANCE.getAlmacen().getProductos().add();
+        //INSTANCE.getAlmacen().getProductos().add();
 
     }
 
@@ -81,8 +90,16 @@ public class AgregarCliente {
     }
 
     @FXML
-    void EventoRegresarPrincipal(MouseEvent event) {
-
+    void EventoRegresarPrincipal(ActionEvent event) {
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/Almacen.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

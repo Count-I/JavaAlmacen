@@ -132,7 +132,7 @@
                         <Image url="@../../public/images/products.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: EF763D;" text="&lt;---" />
+                  <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" onAction="#regresarMenuProductos" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: EF763D;" text="&lt;---" />
                   <Label layoutX="11.0" layoutY="140.0" prefHeight="39.0" prefWidth="204.0" text="Agregue Un producto Refrigerado" textFill="#ef763d">
                      <font>
                         <Font name="Cambria Bold" size="13.0" />

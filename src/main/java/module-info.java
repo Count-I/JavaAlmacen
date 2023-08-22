@@ -8,5 +8,4 @@ module com.almacen.almacen {
     exports com.almacen.src.controller;
     opens com.almacen.src.controller to javafx.fxml;
     opens com.almacen.src.model;
-    opens com.almacen.src.view;
 }
