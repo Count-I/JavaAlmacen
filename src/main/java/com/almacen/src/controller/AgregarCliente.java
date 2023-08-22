@@ -67,11 +67,11 @@ public class AgregarCliente {
     @FXML
     void EventoAgregarCliente(MouseEvent event) {
 
-        int codigo = txt
+       // int codigo =
 
-        ProductoEnvasado productoEnvasado= new ProductoEnvasado()
+       // ProductoEnvasado productoEnvasado= new ProductoEnvasado()
 
-        INSTANCE.getAlmacen().getProductos().add();
+        //INSTANCE.getAlmacen().getProductos().add();
 
     }
 

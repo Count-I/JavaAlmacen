@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            Parent root = FXMLLoader.load(Main.class.getResource("/com/almacen/src/view/.fxml"));
+            Parent root = FXMLLoader.load(Main.class.getResource("/com/almacen/src/view/agregarProductoEnvasado.fxml"));
             Scene scene = new Scene(root, 713, 568);
             stage.setTitle("Almacen");
             stage.setResizable(false);
