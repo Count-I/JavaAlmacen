@@ -15,7 +15,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-
 <AnchorPane prefHeight="575.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.AgregarProductoRefrigerados">
    <children>
       <SplitPane dividerPositions="0.49912739965095987" orientation="VERTICAL" prefHeight="575.0" prefWidth="719.0">
@@ -60,17 +59,17 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="0.0" prefWidth="216.0" promptText="Ingrese su codigo" GridPane.columnIndex="1">
+                        <TextField fx:id="txtCod" prefHeight="0.0" prefWidth="216.0" promptText="Ingrese su codigo" GridPane.columnIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese el valor del producto" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <TextField fx:id="txtValorUnitario" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese el valor del producto" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField promptText="Ingrese la cantidad " GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <TextField fx:id="txtCantidadExistente" promptText="Ingrese la cantidad " GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
@@ -85,7 +84,7 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese la descripcion del producto" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <TextField fx:id="txtDescripcion" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese la descripcion del producto" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
@@ -100,27 +99,27 @@
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </Button>
-                        <TextField prefHeight="0.0" prefWidth="216.0" promptText="Ingrese el nombre del producto" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <TextField fx:id="txtNombre" prefHeight="0.0" prefWidth="216.0" promptText="Ingrese el nombre del producto" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField promptText="Ingrese el Codigo " GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <TextField fx:id="txtCodigoAprobacion" promptText="Ingrese el Codigo " GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
                         <Label text="Temperatura Recomendada:" GridPane.rowIndex="6">
                            <font>
-                              <Font name="Cambria Bold" size="15.0" />
+                              <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <Label text="Codigo de Aprobacion:">
+                        <Label text="Codigo:">
                            <font>
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField promptText="Ingrese la Temperatura " GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <TextField fx:id="txtTemperatura" promptText="Ingrese la Temperatura " GridPane.columnIndex="1" GridPane.rowIndex="6">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
@@ -133,6 +132,7 @@
                      </image>
                   </ImageView>
                   <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" onAction="#regresarMenuProductos" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: EF763D;" text="&lt;---" />
+
                   <Label layoutX="11.0" layoutY="140.0" prefHeight="39.0" prefWidth="204.0" text="Agregue Un producto Refrigerado" textFill="#ef763d">
                      <font>
                         <Font name="Cambria Bold" size="13.0" />
@@ -143,15 +143,15 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="278.0" prefWidth="769.0">
                <children>
                   <TextFlow layoutY="-3.0" prefHeight="284.0" prefWidth="717.0" style="-fx-background-color: EF763D;" />
-                  <TableView layoutX="7.0" layoutY="14.0" prefHeight="249.0" prefWidth="701.0">
+                  <TableView fx:id="tablaProductoRefrigerado" layoutX="7.0" layoutY="14.0" prefHeight="249.0" prefWidth="701.0">
                      <columns>
-                        <TableColumn prefWidth="50.0" text="Codigo" />
-                        <TableColumn prefWidth="56.0" text="Nombre" />
-                        <TableColumn prefWidth="73.0" text="Descripcion" />
-                        <TableColumn prefWidth="87.0" text="Valor Unitario" />
-                        <TableColumn prefWidth="117.0" text="Cantidad existentes" />
-                        <TableColumn prefWidth="151.0" text="Codigo de Aprobacion" />
-                        <TableColumn prefWidth="166.0" text="Temperatura Recomendada" />
+                        <TableColumn fx:id="colCodigo" prefWidth="50.0" text="Codigo" />
+                        <TableColumn fx:id="colNombre" prefWidth="56.0" text="Nombre" />
+                        <TableColumn fx:id="colDescripcion" prefWidth="73.0" text="Descripcion" />
+                        <TableColumn fx:id="colValorUnitario" prefWidth="87.0" text="Valor Unitario" />
+                        <TableColumn fx:id="colCantidadExistente" prefWidth="117.0" text="Cantidad existentes" />
+                        <TableColumn fx:id="colCodigoAprovacion" prefWidth="151.0" text="Codigo de Aprobacion" />
+                        <TableColumn fx:id="colTemperatura" prefWidth="166.0" text="Temperatura Recomendada" />
                      </columns>
                   </TableView>
                </children>

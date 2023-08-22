@@ -78,6 +78,7 @@ public class AgregarProductoEnvasado {
     private final ObservableList<Producto>envasadoObservableList= FXCollections.observableArrayList();
 
 
+    Pais tipoPais = null;
     @FXML
     public void initialize(){
 
@@ -93,42 +94,47 @@ public class AgregarProductoEnvasado {
     }
 
     @FXML
-    void EventoAgregarProductoPerecedero(MouseEvent event) {
-
-    }
-
-    @FXML
-    void EventoEliminarProductoPerecedero(MouseEvent event) {
-
-    }
-
-    @FXML
     void addProductoEnvasado(ActionEvent event) {
 
+        int codigo= Integer.parseInt(txtCodigo.getText());
+        Double valorUnitario= Double.valueOf(txtValorUnitario.getText());
+        BigInteger existencia= BigInteger.valueOf(Integer.parseInt(txtCantidadExistente.getText()));
+        Float pesoEnvasoe = Float.parseFloat(txtPesoEnvase.getText());
+        ProductoEnvasado productoEnvasado= new ProductoEnvasado(codigo,txtNombre.getText(),valorUnitario,existencia,pickDateFechaEnvasao.getValue(), pesoEnvasoe,tipoPais);
+        INSTANCE.getAlmacen().addProducto(productoEnvasado);
+        envasadoObservableList.add(productoEnvasado);
+        tablaEnvasados.setItems(envasadoObservableList);
     }
 
     @FXML
     void asignarArgentina(ActionEvent event) {
 
+        tipoPais = Pais.ARGENTINA;
     }
 
     @FXML
     void asignarChile(ActionEvent event) {
 
+        tipoPais = Pais.CHILE;
     }
 
     @FXML
     void asignarColombia(ActionEvent event) {
+        tipoPais = Pais.COLOMBIA;
 
     }
 
     @FXML
     void asignarEcuador(ActionEvent event) {
 
+        tipoPais = Pais.ECUADOR;
+
     }
 
     @FXML
     void asignarPeru(ActionEvent event) {
+
+        tipoPais = Pais.PERU;
 
     }
 

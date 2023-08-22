@@ -29,4 +29,14 @@ public class Almacen {
     public List<Producto> getProductos() {
         return productos;
     }
+
+    public void addProducto(Producto producto) {
+        productos.add(producto);
+    }
+    public List<Producto> obtenerListaRefrigerados()
+    {
+        return productos.stream().filter(producto -> producto instanceof ProductoRefrigerado).collect(Collectors.toList());
+    }
+
+
 }
