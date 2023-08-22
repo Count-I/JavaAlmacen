@@ -18,8 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-
-<AnchorPane prefHeight="575.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.AgregarProductoEnvasado">
+<AnchorPane prefHeight="575.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.AgregarProductoEnvasado">
    <children>
       <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="10.0" orientation="VERTICAL" prefHeight="565.0" prefWidth="728.0">
          <items>
@@ -30,7 +29,7 @@
                         <Image url="@../../public/images/products.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: EF763D;" text="&lt;---" textFill="WHITE" />
+                  <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" onAction="#regresarMenuProductos" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: EF763D;" text="&lt;---" textFill="WHITE" />
                   <Label layoutX="11.0" layoutY="140.0" prefHeight="39.0" prefWidth="204.0" text="Agregue Un producto Envasado" textFill="#ef763d">
                      <font>
                         <Font name="Cambria Bold" size="13.0" />
@@ -74,18 +73,18 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <DatePicker prefHeight="25.0" prefWidth="271.0" promptText="Ingrese la fecha de envasado" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <TextField prefHeight="0.0" prefWidth="216.0" promptText="Ingrese su codigo" GridPane.columnIndex="1">
+                        <DatePicker fx:id="pickDateFechaEnvasao" prefHeight="25.0" prefWidth="271.0" promptText="Ingrese la fecha de envasado" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="txtCodigo" prefHeight="0.0" prefWidth="216.0" promptText="Ingrese su codigo" GridPane.columnIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese valor del producto" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <TextField fx:id="txtValorUnitario" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese valor del producto" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField promptText="Ingrese la cantidad " GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <TextField fx:id="txtCantidadExistente" promptText="Ingrese la cantidad " GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
@@ -100,22 +99,22 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese descripcion del producto" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <TextField fx:id="txtDescripcion" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese descripcion del producto" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="agregarProductoPerecedero" mnemonicParsing="false" onAction="#EventoAgregarProductoPerecedero" onMouseClicked="#EventoAgregarProductoPerecedero" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="9">
+                        <Button mnemonicParsing="false" onAction="#addProductoEnvasado" onMouseClicked="#EventoAgregarProductoPerecedero" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="9">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="EliminarProductoPerecedero" mnemonicParsing="false" onAction="#EventoEliminarProductoPereceder" onMouseClicked="#EventoEliminarProductoPerecedero" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                        <Button mnemonicParsing="false" onAction="#eliminarProducto" onMouseClicked="#EventoEliminarProductoPerecedero" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </Button>
-                        <TextField prefHeight="0.0" prefWidth="216.0" promptText="Ingrese el nombre del producto" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <TextField fx:id="txtNombre" prefHeight="0.0" prefWidth="216.0" promptText="Ingrese el nombre del producto" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
@@ -130,18 +129,18 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField promptText="Ingrese el peso del envase" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <TextField fx:id="txtPesoEnvase" promptText="Ingrese el peso del envase" GridPane.columnIndex="1" GridPane.rowIndex="6">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <MenuButton mnemonicParsing="false" text="Seleccione el pais de origen" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <MenuButton fx:id="MenuButtonPaisOrigen" mnemonicParsing="false" text="Seleccione el pais de origen" GridPane.columnIndex="1" GridPane.rowIndex="7">
                           <items>
-                              <MenuItem mnemonicParsing="false" text="Perù" />
-                              <MenuItem mnemonicParsing="false" text="Chile" />
-                            <MenuItem mnemonicParsing="false" text="Colombia" />
-                            <MenuItem mnemonicParsing="false" text="Argentina" />
-                              <MenuItem mnemonicParsing="false" text="Ecuador" />
+                              <MenuItem mnemonicParsing="false" onAction="#asignarPeru" text="Perù" />
+                              <MenuItem mnemonicParsing="false" onAction="#asignarChile" text="Chile" />
+                            <MenuItem mnemonicParsing="false" onAction="#asignarColombia" text="Colombia" />
+                            <MenuItem mnemonicParsing="false" onAction="#asignarArgentina" text="Argentina" />
+                              <MenuItem mnemonicParsing="false" onAction="#asignarEcuador" text="Ecuador" />
                           </items>
                         </MenuButton>
                      </children>
@@ -151,16 +150,16 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="278.0" prefWidth="769.0">
                <children>
                   <TextFlow layoutY="-3.0" prefHeight="278.0" prefWidth="725.0" style="-fx-background-color: EF763D;" />
-                  <TableView layoutX="2.0" layoutY="14.0" prefHeight="249.0" prefWidth="710.0">
+                  <TableView fx:id="tablaEnvasados" layoutX="2.0" layoutY="14.0" prefHeight="249.0" prefWidth="710.0">
                      <columns>
-                        <TableColumn prefWidth="50.0" text="Codigo" />
-                        <TableColumn prefWidth="56.0" text="Nombre" />
-                        <TableColumn prefWidth="73.0" text="Descripcion" />
-                        <TableColumn prefWidth="87.0" text="Valor Unitario" />
-                        <TableColumn prefWidth="117.0" text="Cantidad existentes" />
-                        <TableColumn prefWidth="120.0" text="Fecha de envasado" />
-                        <TableColumn prefWidth="102.0" text="Peso del envase" />
-                        <TableColumn prefWidth="102.0" text="Pais de Origen" />
+                        <TableColumn fx:id="colCodigo" prefWidth="50.0" text="Codigo" />
+                        <TableColumn fx:id="colNombre" prefWidth="56.0" text="Nombre" />
+                        <TableColumn fx:id="colDescripcion" prefWidth="73.0" text="Descripcion" />
+                        <TableColumn fx:id="colValorUnitario" prefWidth="87.0" text="Valor Unitario" />
+                        <TableColumn fx:id="colCantidadExistentes" prefWidth="117.0" text="Cantidad existentes" />
+                        <TableColumn fx:id="colFechaEnvasado" prefWidth="120.0" text="Fecha de envasado" />
+                        <TableColumn fx:id="colPesoEnvasado" prefWidth="102.0" text="Peso del envase" />
+                        <TableColumn fx:id="colPaisOrigen" prefWidth="102.0" text="Pais de Origen" />
                      </columns>
                   </TableView>
                </children>

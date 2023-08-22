@@ -1,6 +1,7 @@
 package com.almacen.src.controller;
 
 import com.almacen.src.model.PersonaJuridica;
+import com.almacen.src.model.ProductoEnvasado;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -65,6 +66,12 @@ public class AgregarCliente {
 
     @FXML
     void EventoAgregarCliente(MouseEvent event) {
+
+        int codigo = txt
+
+        ProductoEnvasado productoEnvasado= new ProductoEnvasado()
+
+        INSTANCE.getAlmacen().getProductos().add();
 
     }
 

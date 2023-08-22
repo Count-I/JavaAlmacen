@@ -1,6 +1,5 @@
 package com.almacen.src.model;
 
-import java.io.PipedWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,6 +15,10 @@ public class Almacen {
 
     public List<Persona> obtenerJuridica(){
         return clientes.stream().filter(persona -> persona instanceof PersonaJuridica).collect(Collectors.toList());
+    }
+
+    public List<Producto> obtenerListaEnvasados(){
+        return productos.stream().filter(producto -> producto instanceof ProductoEnvasado).collect(Collectors.toList());
     }
 
     public List<Persona> getClientes() {
