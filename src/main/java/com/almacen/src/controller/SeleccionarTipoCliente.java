@@ -31,6 +31,8 @@ public class SeleccionarTipoCliente {
             throw new RuntimeException(exception);
         }
     }
+
+
     public void EventoAgregarCliente(ActionEvent actionEvent) {
     }
 

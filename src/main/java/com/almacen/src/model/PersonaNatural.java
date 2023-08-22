@@ -1,12 +1,13 @@
 package com.almacen.src.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class PersonaNatural extends Persona{
     private String email;
-    private Date fechaNacimiento;
+    private LocalDate fechaNacimiento;
 
-    public PersonaNatural(String email, Date fechaNacimiento) {
+    public PersonaNatural(String email, LocalDate fechaNacimiento) {
         this.email = email;
         this.fechaNacimiento = fechaNacimiento;
     }
@@ -19,11 +20,11 @@ public class PersonaNatural extends Persona{
         this.email = email;
     }
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 }

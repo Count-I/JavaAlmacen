@@ -20,6 +20,11 @@ public abstract class Persona {
         this.tipoPersona = tipoPersona;
     }
 
+
+
+
+
+
     public String getNombre() {
         return nombre;
     }
