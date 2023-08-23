@@ -32,7 +32,7 @@ public class AlmacenController {
     @FXML
     private void eventoAgregarProducto(ActionEvent event) throws IOException {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProduct.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProducto.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

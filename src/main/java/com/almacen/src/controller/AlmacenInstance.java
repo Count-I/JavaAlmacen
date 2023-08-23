@@ -10,7 +10,6 @@ public enum AlmacenInstance {
 
     AlmacenInstance() {
         almacen= new Almacen();
-        almacen.getClientes().add(new PersonaJuridica("1213"));
     }
 
     public Almacen getAlmacen() {

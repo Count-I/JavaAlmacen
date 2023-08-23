@@ -42,18 +42,23 @@
                 <Font name="Cambria Bold" size="14.0" />
             </font>
         </Label>
+        <Button fx:id="agregarVenta" mnemonicParsing="false" onAction="#EventoAgregarVenta"  prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar venta" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="12.0" />
+            </font>
+        </Button>
         <TextField fx:id="IdentificacionCliente" layoutX="266.0" layoutY="171.0" prefHeight="15.0" prefWidth="99.0" promptText="Identificacion" />
         <TextField fx:id="Codigoproducto" layoutX="393.0" layoutY="171.0" prefHeight="25.0" prefWidth="135.0" promptText="Codigo Producto" />
         <TextField fx:id="CantidadProducto" layoutX="563.0" layoutY="171.0" prefHeight="25.0" prefWidth="135.0" promptText="Cantidad" />
         <TextField fx:id="ivaProducto" layoutX="253.0" layoutY="241.0" prefHeight="16.0" prefWidth="126.0" promptText="Ingrese el Iva" />
-        <TableView layoutX="253.0" layoutY="296.0" prefHeight="200.0" prefWidth="453.0">
+        <TableView fx:id="tablaVentas" layoutX="253.0" layoutY="296.0" prefHeight="200.0" prefWidth="453.0">
             <columns>
-                <TableColumn prefWidth="75.0" text="Codigo" />
-                <TableColumn prefWidth="75.0" text="Fecha" />
-                <TableColumn prefWidth="75.0" text="Id cliente" />
-                <TableColumn prefWidth="75.0" text="Cantidad" />
-                <TableColumn prefWidth="75.0" text="Producto" />
-                <TableColumn prefWidth="75.0" text="Subtotales" />
+                <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Codigo" />
+                <TableColumn fx:id="colFecha" prefWidth="75.0" text="Fecha" />
+                <TableColumn fx:id="colIdCliente" prefWidth="75.0" text="Id cliente" />
+                <TableColumn fx:id="colCantidad" prefWidth="75.0" text="Cantidad" />
+                <TableColumn fx:id="colProducto" prefWidth="75.0" text="Producto" />
+                <TableColumn fx:id="colSubtotal" prefWidth="75.0" text="Subtotales" />
             </columns>
         </TableView>
         <Label layoutX="401.0" layoutY="205.0" prefHeight="23.0" prefWidth="99.0" text="Fecha:" textFill="#ef763d">
@@ -67,7 +72,7 @@
                 <Image url="@../../public/images/shoppingCart.png" />
             </image>
         </ImageView>
-        <Button layoutX="14.0" layoutY="374.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="206.0" style="-fx-background-color: #ef763d;" text="Regresar al Menu Principal">
+        <Button layoutX="14.0" layoutY="374.0" mnemonicParsing="false" onAction="#EventoRegresarPrincipal" prefHeight="11.0" prefWidth="206.0" style="-fx-background-color: #ef763d;" text="Regresar al Menu Principal">
             <font>
                 <Font name="Cambria Bold" size="14.0" />
             </font>
