@@ -11,13 +11,12 @@ public abstract class Persona {
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String documento, String direccion, String telefono, TipoPersona tipoPersona) {
+    public Persona(String nombre, String apellido, String documento, String direccion, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.tipoPersona = tipoPersona;
     }
 
 

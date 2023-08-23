@@ -7,6 +7,11 @@ public class PersonaJuridica extends Persona{
         this.nit = nit;
     }
 
+    public PersonaJuridica(String nombre, String apellido, String documento, String direccion, String telefono, String nit) {
+        super(nombre, apellido, documento, direccion, telefono);
+        this.nit = nit;
+    }
+
     public String getNit() {
         return nit;
     }

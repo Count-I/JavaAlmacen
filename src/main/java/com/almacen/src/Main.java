@@ -14,7 +14,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         try {
             Parent root = FXMLLoader.load(Main.class.getResource("view/Almacen.fxml"));
-            Scene scene = new Scene(root, 713, 568);
+            Scene scene = new Scene(root);
             stage.setTitle("Almacen");
             stage.setResizable(false);
             stage.setScene(scene);

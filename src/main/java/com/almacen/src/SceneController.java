@@ -17,7 +17,7 @@ public class SceneController {
 
     public void eventoAgregarCliente(ActionEvent event) throws IOException {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("view/agregarCliente.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("view/agregarClienteJuridico.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

@@ -12,6 +12,12 @@ public class PersonaNatural extends Persona{
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public PersonaNatural(String nombre, String apellido, String documento, String direccion, String telefono, String email, LocalDate fechaNacimiento) {
+        super(nombre, apellido, documento, direccion, telefono);
+        this.email = email;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
     public String getEmail() {
         return email;
     }

@@ -53,5 +53,10 @@
             <Image url="@../../public/images/products.png" />
          </image>
       </ImageView>
+      <Button fx:id="volverMenu" layoutX="501.0" layoutY="353.0" mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: EF763D;" text="Menu Principal" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

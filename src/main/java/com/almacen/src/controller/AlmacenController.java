@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Separator;
 import javafx.stage.Stage;
 
@@ -21,7 +20,7 @@ public class AlmacenController {
     @FXML
     private void eventoAgregarCliente(ActionEvent event) throws IOException {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/agregarCliente.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarTipoCliente.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -33,7 +32,7 @@ public class AlmacenController {
     @FXML
     private void eventoAgregarProducto(ActionEvent event) throws IOException {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProducto.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/almacen/src/view/seleccionarProduct.fxml"));
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

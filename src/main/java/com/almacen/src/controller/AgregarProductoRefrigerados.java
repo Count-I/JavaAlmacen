@@ -1,4 +1,5 @@
 package com.almacen.src.controller;
+import com.almacen.src.model.Producto;
 import com.almacen.src.model.ProductoRefrigerado;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -75,12 +76,12 @@ public class AgregarProductoRefrigerados {
     @FXML
     private TextField txtValorUnitario;
 
-    private final ObservableList<ProductoRefrigerado>observableListRefrigerado= FXCollections.observableArrayList();
+    private final ObservableList<Producto>observableListRefrigerado= FXCollections.observableArrayList();
 
 
     @FXML
     public void initialize(){
-        observableListRefrigerado .addAll((ProductoRefrigerado) INSTANCE.getAlmacen().obtenerListaRefrigerados());
+        observableListRefrigerado .addAll( INSTANCE.getAlmacen().obtenerListaRefrigerados());
         colCantidadExistente.setCellValueFactory(new PropertyValueFactory<ProductoRefrigerado, BigInteger>("existencia"));
         colNombre.setCellValueFactory(new PropertyValueFactory<ProductoRefrigerado,String>("nombre"));
         colCodigo.setCellValueFactory(new PropertyValueFactory<ProductoRefrigerado,Integer>("codigo"));

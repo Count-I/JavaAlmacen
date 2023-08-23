@@ -89,12 +89,12 @@
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="agregarProductoRefrigerado" mnemonicParsing="false" onAction="#EventoAgregarProductoRefrigerado" onMouseClicked="#EventoAgregarProductoRefrigerado" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="9">
+                        <Button fx:id="agregarProductoRefrigerado" mnemonicParsing="false" onAction="#EventoAgregarProductoRefrigerado"  prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="9">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="EliminarProductoRefrigerado" mnemonicParsing="false" onAction="#EventoEliminarProductoRefrigerado" onMouseClicked="#EventoEliminarProductoRefrigerado" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                        <Button fx:id="EliminarProductoRefrigerado" mnemonicParsing="false" onAction="#EventoEliminarProductoRefrigerado"  prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>

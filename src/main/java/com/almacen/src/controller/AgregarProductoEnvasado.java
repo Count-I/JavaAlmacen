@@ -95,7 +95,6 @@ public class AgregarProductoEnvasado {
 
     @FXML
     void addProductoEnvasado(ActionEvent event) {
-
         int codigo= Integer.parseInt(txtCodigo.getText());
         Double valorUnitario= Double.valueOf(txtValorUnitario.getText());
         BigInteger existencia= BigInteger.valueOf(Integer.parseInt(txtCantidadExistente.getText()));

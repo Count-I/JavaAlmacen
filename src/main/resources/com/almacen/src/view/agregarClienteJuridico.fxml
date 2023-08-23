@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="568.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.ProductosNaturalJ">
+<AnchorPane prefHeight="568.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almacen.src.controller.AgregarClienteJuridico">
    <children>
       <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="568.0" prefWidth="714.0">
         <items>
@@ -52,53 +52,53 @@
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <Label text="Direccion:" GridPane.rowIndex="3">
+                        <Label text="Direccion:" GridPane.rowIndex="4">
                            <font>
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <Label text="Telefono:" GridPane.rowIndex="4">
+                        <Label text="Telefono:" GridPane.rowIndex="5">
                            <font>
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
                         <TextField GridPane.columnIndex="1" />
-                        <TextField minWidth="-Infinity" prefHeight="26.0" prefWidth="201.0" promptText="Ingrese Su nombre" GridPane.columnIndex="1">
+                        <TextField fx:id="txtNombre" minWidth="-Infinity" prefHeight="26.0" prefWidth="201.0" promptText="Ingrese Su nombre" GridPane.columnIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField prefHeight="0.0" prefWidth="216.0" promptText="Ingrese sus apellidos" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <TextField fx:id="txtApellido" prefHeight="0.0" prefWidth="216.0" promptText="Ingrese sus apellidos" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese su Cedula" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <TextField fx:id="txtCedula" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese su Cedula" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField promptText="Ingrese su direccion" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <TextField fx:id="txtDireccion" promptText="Ingrese su direccion" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <TextField promptText="Ingrese Su telefono" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <TextField fx:id="txtTelefono" promptText="Ingrese Su telefono" GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Label text="Ingrese su nit:" GridPane.rowIndex="5">
+                        <Label text="Ingrese su nit:" GridPane.rowIndex="3">
                            <font>
                               <Font name="Cambria Bold" size="19.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="22.0" prefWidth="312.0" promptText="Ingrese Su nit" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <TextField fx:id="txtNit" prefHeight="22.0" prefWidth="312.0" promptText="Ingrese Su nit" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="agregarCliente" mnemonicParsing="false" onAction="#EventoAgregarCliente" onMouseClicked="#EventoAgregarCliente" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: EF763D;" text="Agregar Cliente" GridPane.rowIndex="7">
+                        <Button fx:id="agregarCliente" mnemonicParsing="false" onAction="#EventoAgregarCliente" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: EF763D;" text="Agregar Cliente" GridPane.rowIndex="7">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
@@ -110,12 +110,12 @@
                         </Button>
                      </children>
                   </GridPane>
-                  <Button layoutX="28.0" layoutY="229.0" minWidth="49.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: EF763D;" text="&lt;---">
+                  <Button layoutX="28.0" layoutY="229.0" minWidth="49.0" mnemonicParsing="false" onAction="#EventoRegresarPrincipal" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: EF763D;" text="&lt;---">
                      <font>
                         <Font name="Cambria Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="regresarPrincipal" layoutX="34.0" layoutY="185.0" mnemonicParsing="false" onAction="#EventoRegresarPrincipal" onMouseClicked="#EventoRegresarPrincipal" style="-fx-background-color: EF763D;" text="Regresar a la Principal">
+                  <Button fx:id="regresarPrincipal" layoutX="34.0" layoutY="185.0" mnemonicParsing="false" onAction="#EventoRegresarPrincipal" style="-fx-background-color: EF763D;" text="Regresar a la Principal">
                      <font>
                         <Font name="Cambria" size="12.0" />
                      </font>
@@ -130,14 +130,14 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
                   <TextFlow layoutX="-18.0" layoutY="-11.0" prefHeight="304.0" prefWidth="739.0" style="-fx-background-color: EF763D;" />
-                  <TableView fx:id="tabla1" layoutX="11.0" layoutY="8.0" prefHeight="259.0" prefWidth="685.0">
+                  <TableView fx:id="tablaPersonas" layoutX="11.0" layoutY="8.0" prefHeight="259.0" prefWidth="685.0">
                      <columns>
-                        <TableColumn prefWidth="83.99999523162842" text="Identificacion" />
-                        <TableColumn prefWidth="110.40003204345703" text="Nombres" />
-                        <TableColumn prefWidth="109.59999084472656" text="Apellidos" />
-                        <TableColumn prefWidth="152.0" text="Dirrecion" />
-                        <TableColumn prefWidth="119.19998168945312" text="Telefono" />
-                        <TableColumn prefWidth="117.5999755859375" text="Nit" />
+                        <TableColumn fx:id="colIdentificacion" prefWidth="87.0" text="Identificacion" />
+                        <TableColumn fx:id="colNombre" prefWidth="105.59998321533203" text="Nombre" />
+                        <TableColumn fx:id="colApellido" prefWidth="117.60005187988281" text="Apellidos" />
+                        <TableColumn fx:id="colDireccion" prefWidth="107.20001220703125" text="Dirrecion" />
+                        <TableColumn fx:id="colTelefono" prefWidth="120.79995727539062" text="Telefono" />
+                        <TableColumn fx:id="colNit" prefWidth="147.2000732421875" text="Nit" />
                      </columns>
                   </TableView>
                </children></AnchorPane>

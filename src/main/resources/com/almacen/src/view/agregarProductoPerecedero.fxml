@@ -89,12 +89,12 @@
                               <Font name="Calibri Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="agregarProductoPerecedero" mnemonicParsing="false" onAction="#EventoAgregarProductoPerecedero" onMouseClicked="#EventoAgregarProductoPerecedero" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="7">
+                        <Button fx:id="agregarProductoPerecedero" mnemonicParsing="false" onAction="#EventoAgregarProductoPerecedero"  prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: EF763D;" text="Agregar Producto" textFill="WHITE" GridPane.rowIndex="7">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="EliminarProductoPerecedero" mnemonicParsing="false"  onMouseClicked="#EventoEliminarProductoPerecedero" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <Button fx:id="EliminarProductoPerecedero" mnemonicParsing="false"   prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: EF763D;" text="Eliminar Producto" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
                            <font>
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
